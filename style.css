@@ -10,9 +10,9 @@ html {
 @keyframes background {
     0% {background-color: rgba(83, 128, 23, 0.973);}
     25% {background-color: rgb(0, 83, 11);}
-    50%{background-color: #2e1e4f;}
-    75%{background-color: rgba(16, 9, 80, 0.808)}
-    100%{background-color:rgba(83, 128, 23, 0.973);}
+    50% {background-color: #2e1e4f;}
+    75% {background-color: rgba(16, 9, 80, 0.808);}
+    100% {background-color:rgba(83, 128, 23, 0.973);}
 }
 
 .main-group {
@@ -37,10 +37,23 @@ input {
     background-color: #74111185;
     color: #f0f0f5;
     box-shadow: 1px 1px 80px 6px rgba(17, 136, 233, 0.753);
+
+    animation-name: mainInput;
+    animation-delay: 800ms;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     transition: 300ms;
 }
 
+@keyframes mainInput {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.12);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.12);}
+    100% {transform: scale(1);}
+}
 input:focus {
+    animation-play-state: paused;
     box-shadow: none;
     transform: scale(1.3);
 }
