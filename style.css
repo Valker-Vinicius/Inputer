@@ -15,7 +15,7 @@ html {
     100% {background-color:rgba(83, 128, 23, 0.973);}
 }
 
-#main-group {
+#container {
     text-align: center;
     margin-top: 40vh;
     max-width: 90vw;
@@ -55,5 +55,5 @@ input {
 input:focus {
     animation-play-state: paused;
     box-shadow: none;
-    width: 106%
+    width: 102%
 }
